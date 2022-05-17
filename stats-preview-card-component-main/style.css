@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* TYPOGRAPHY */
+
+/* FONTS BEGIN */
+
+@import url('https://fonts.googleapis.com/css2?family=wght@400;700&family=Lexend+Deca&display=swap');
+
+/* FONT END */
+
+h2{
+    font-size: 1.7em;
+    line-height: 1em;
+    font-family:'Inter', sans-serif;
+    font-weight: 700;
+}
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Inter',sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    text-align: left;
+    font-size: 0.9em;
+}
+.first-box-3 p{
+    font-size: 0.6em;
+    letter-spacing: 2px;
+    margin-top: 1em;
+    font-family:'lexend Deca',sans-serif;    
+}
+.first-box-3 h3{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+/* TYPOGRAPHY ENDS */
+
+
+/* COLOR STYLE */
+
+body{
+    background: hsl(233, 47%, 7%);
+    color: #fff;
+}
+main{
+    background: hsl(244, 38%, 16%);
+    color: #fff;
+}
+.second-box{
+    background: linear-gradient(
+        hsla(277, 92%, 30%, 0.473), hsla(277, 92%, 30%, 0.473)),
+        url(/stats-preview-card-component-main/images/image-header-desktop.jpg);
+        background-repeat: no-repeat;
+        background-position: center ;
+        background-size: cover;
+        border-radius: 4px;
+}
+.first-box-1 span{
+    color: hsl(277, 64%, 61%);
+}
+/* COLOR STYLE ENDS */
+
+/* STYLING */
+
+main{
+    width: 70%;
+    height: auto;
+    margin: 10% auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.first-box{
+    padding: 10%;
+}
+.first-box-1{
+    margin-bottom: 2em;
+}
+.first-box-2{
+    margin-bottom: 4em;
+}
+.first-box-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+.second-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+.second-box p{
+    opacity: 0;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 700;
+}
+.second-box:hover{
+    background: linear-gradient(hsla(277,93%, 16%, 0.89), hsla(277, 93%, 17%, 0.822))
+    url(/stats-preview-card-component-main/images/image-header-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.second-box:hover p{opacity: 1;}
+@media (max-width:800px) {
+    main{
+        width: 90%;
+        max-height: 1000px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+}
